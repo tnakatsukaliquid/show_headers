@@ -1,7 +1,11 @@
 
 <h2>Hello World</h2>
 <p>
-The time is now: <%= Time.now %>
+  The time is now: <%= Time.now %>
+  <br />
+  <span>request.base_url: <%= request.base_url %></span>
+  <br />
+  <span>request.origin: <%= request.origin %></span>
   <br />
   <pre>
   <%= JSON.pretty_generate(request.headers.to_h).to_s %>
